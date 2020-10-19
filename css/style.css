@@ -1,11 +1,19 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+/* font-family: 'Spartan', sans-serif; */
+
 /* COLOR REFERENCE */
-.color {
+/* .color {
   color: rgb(80, 32, 80);
   color: rgb(238, 104, 164);
   
   color: rgb(147, 123, 146);
   color: rgb(247, 242, 247);
   color: rgb(255, 255, 255);
+} */
+
+* {
+  box-sizing: border-box;
 }
 
 /* MAIN */
@@ -13,6 +21,80 @@ body {
   background-image: url('../challenge-heading/images/bg-pattern-top-desktop.svg'), url('../challenge-heading/images/bg-pattern-bottom-desktop.svg');
   background-position: top left, bottom right;
   background-repeat: no-repeat;
-
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
   height: 800px;
+  padding: 130px 0;
+}
+
+/* CONTAINERS */
+.container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 77%;
+}
+.top-container {
+  grid-template: 1fr / 1fr 1fr;
+  grid-template-areas: 'heading ratings';
+  margin-bottom: 55px;
+}
+.bottom-container {
+  grid-template: 1fr / 1fr 1fr 1fr;
+  grid-template-areas: 'review1 review2 review3';
+}
+
+/* HEADING */
+.top-container .heading {
+  grid-area: heading;
+}
+.top-container .heading h2 {
+  color: rgb(80, 32, 80);
+  font-size: 3.2em;
+  font-weight: 700;
+  letter-spacing: -2px;
+  width: 70%;
+}
+.top-container .heading p {
+  color: rgba(0, 0, 0, 0.63);
+  font-size: 1.05em;
+  letter-spacing: -1px;
+  line-height: 1.6em;
+  padding: 15px 0;
+  width: 80%;
+}
+
+/* RATINGS */
+.top-container .ratings {
+  grid-area: ratings;
+  padding-top: 15px;
+}
+.top-container .ratings .rating {
+  margin-bottom: 16px;
+}
+.top-container .ratings .rating1 {
+  position: relative;
+  right: 93px;
+}
+.top-container .ratings .rating2 {
+  position: relative;
+  right: 45px;
+}
+
+
+/* REVIEWS */
+.bottom-container .review1 {
+  grid-area: review1;
+}
+.bottom-container .review2 {
+  grid-area: review2;
+  justify-self: center;
+  position: relative;
+  top: 15px;
+}
+.bottom-container .review3 {
+  grid-area: review3;
+  justify-self: right;
+  position: relative;
+  top: 30px;
 }

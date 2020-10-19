@@ -1,0 +1,27 @@
+.rating {
+  background-color: rgb(247, 242, 247);
+  border-radius: 8px;
+  margin-left: auto;
+  padding: 22px 0 22px 180px;
+  position: relative;
+  width: 445px;
+}
+
+.rating p {
+  color: rgb(80, 32, 80);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.rating p::before {
+  background-image: url('../challenge-heading/images/star\ -\ desktop.svg');
+  background-position: left;
+  background-repeat: repeat-x;
+  background-size: 24px;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 30px;
+  position: absolute;
+  top: 0;
+  width: 120px;
+}

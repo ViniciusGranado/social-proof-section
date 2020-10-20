@@ -23,8 +23,9 @@ body {
   background-repeat: no-repeat;
   font-family: 'Spartan', sans-serif;
   font-size: 15px;
-  height: 800px;
+  height: 100vh;
   padding: 130px 0;
+  background-attachment: fixed;
 }
 
 /* CONTAINERS */

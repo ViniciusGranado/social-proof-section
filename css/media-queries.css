@@ -1,9 +1,9 @@
 @media (max-width: 1100px) {
   body {
+    background-size: auto, 600px;
     padding: 100px 0;
-    height: auto;
   }
-  
+
   /* CONTAINERS */
   .container {
     width: 90%;
@@ -58,9 +58,15 @@
   body {
     padding: 70px 0;
   }
-
+  
   /* HEADING */
   .top-container .heading h2 {
     font-size: 3.5em;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url('../challenge-heading/images/bg-pattern-top-mobile.svg'), url('../challenge-heading/images/bg-pattern-bottom-mobile.svg');
   }
 }

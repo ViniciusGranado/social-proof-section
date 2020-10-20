@@ -1,0 +1,56 @@
+@media (max-width: 1100px) {
+  body {
+    padding: 100px 0;
+  }
+  /* CONTAINERS */
+  .top-container {
+    grid-template: 1fr 1fr / 1fr;
+    grid-template-areas: 'heading' 
+                         'ratings';
+    margin-bottom: 55px;
+    width: 90%;
+    text-align: center;
+  }
+
+
+  /* HEADING */
+  .heading {
+    margin: 0 auto;
+  }
+  .top-container .heading h2 {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: red; */
+    font-size: 4.5em;
+    width: 100%;
+  }
+  .top-container .heading p {
+    font-size: 1.3em;
+    letter-spacing: -1px;
+    line-height: 1.6em;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 600px;
+    /* background-color: red; */
+    margin: 0 auto;
+  }
+
+  /* RATINGS */
+  .top-container .ratings {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 675px) {
+  /* HEADING */
+  .top-container .heading h2 {
+    font-size: 3.5em;
+    background-color: red;
+
+  }
+
+
+  /* RATINGS */
+
+}

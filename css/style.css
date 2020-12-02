@@ -4,27 +4,31 @@
 
 /* COLOR REFERENCE */
 /* .color {
-  color: rgb(80, 32, 80);
-  color: rgb(238, 104, 164);
+  color: #502050;
+  color: #ee68a4;
   
-  color: rgb(147, 123, 146);
-  color: rgb(247, 242, 247);
-  color: rgb(255, 255, 255);
+  color: #937b92;
+  color: #f7f2f7;
+  color: #ffffff;
 } */
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 15px;
+}
+
 /* MAIN */
+
 body {
+  background-attachment: fixed;
   background-image: url('../challenge-heading/images/bg-pattern-top-desktop.svg'), url('../challenge-heading/images/bg-pattern-bottom-desktop.svg');
   background-position: top left, bottom right;
   background-repeat: no-repeat;
   font-family: 'Spartan', sans-serif;
-  font-size: 15px;
   padding: 130px 0;
-  background-attachment: fixed;
 }
 
 /* CONTAINERS */
@@ -49,7 +53,7 @@ body {
   grid-area: heading;
 }
 .top-container .heading h2 {
-  color: rgb(80, 32, 80);
+  color: #502050;
   font-size: 3.2em;
   font-weight: 700;
   letter-spacing: -2px;

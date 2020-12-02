@@ -9,14 +9,13 @@
 
 .rating p {
   color: rgb(80, 32, 80);
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 .rating p::before {
-  background-image: url('../challenge-heading/images/star\ -\ desktop.svg');
+  background-image: url('../challenge-heading/images/star-desktop.svg');
   background-position: left;
   background-repeat: repeat-x;
-  background-size: 24px;
   content: '';
   display: block;
   height: 100%;
